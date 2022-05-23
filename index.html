@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orologio e cronometro in JS</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <div id="data_ora">
+
+        <h2>Orologio</h2>
+
+        <div id="data">
+            <div class="card" id="giorno"></div>
+            <div class="card" id="mese"></div>
+            <div class="card" id="anno"></div>
+        </div>
+
+        <div id="clock">
+            <img src="images/quadranteclock.png">
+            <img src="images/secondiclock.png" id="lancettasecondi">
+            <img src="images/minuticlock.png" id="lancettaminuti">
+            <img src="images/oreclock.png" id="lancettaore">
+            <img src="images/centroclock.png" id="centro">
+        </div>
+
+        <div id="orologiodigitale">
+            <div class="card" id="oreclock"></div>
+            <p>:</p>
+            <div class="card" id="minuticlock"></div>
+        </div>
+
+
+        <div id="cronodigitale">
+
+            <h2>Cronometro</h2>
+
+            <div class="display">
+                <div class="card" id="orecrono"></div>
+                <p>:</p>
+                <div class="card" id="minuticrono"></div>
+                <p>:</p>
+                <div class="card" id="secondicrono"></div>
+                <p>:</p>
+                <div class="card" id="centcrono"></div>
+            </div>
+
+            <div class="controlli">
+                <button onclick="startCrono()"><i class="fa-solid fa-circle-play"></i></button>
+                <button onclick="pauseCrono()"><i class="fa-solid fa-circle-pause"></i></button>
+                <button onclick="resetCrono()"><i class="fa-solid fa-arrow-rotate-left"></i></button>
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
