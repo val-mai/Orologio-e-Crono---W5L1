@@ -68,6 +68,7 @@ h2 {
 
 .display {
     display: flex;
+    align-items: center;
 }
 
 #orologiodigitale p, #cronodigitale p {
@@ -83,6 +84,11 @@ h2 {
     align-items: center;
     justify-content: center;
     font-size:3rem;
+}
+
+.display .card{
+    height: 75px;
+    width: 75px;
 }
 
 button {
