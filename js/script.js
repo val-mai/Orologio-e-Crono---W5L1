@@ -6,7 +6,7 @@ data();
 
 /* Orologio */
 
-setInterval(function () {
+setInterval(function() {
     oraclock = new Date().getHours();
     minuticlock = new Date().getMinutes();
     secondiclock = new Date().getSeconds();
@@ -29,7 +29,7 @@ function muoviLancette() {
     if (oraclock > 12) {
         oraclock = oraclock - 12;
     }
-    lancettaore.style.transform = "rotate(" + oraclock * 360 / 12 + "deg)"
+    lancettaore.style.transform = "rotate(" + (oraclock + (minuticlock/60)) * 360 / 12 + "deg)"
 
 }
 
@@ -140,7 +140,7 @@ setInterval(function () {
         secondicrono = 0;
         minuticrono++;
     }
-    if (minuticrono > 99) {
+    if (minuticrono > 60) {
         minuticrono = 0;
         oracrono++;
     }
